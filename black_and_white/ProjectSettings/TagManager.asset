@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WhiteFloor
   - BlackFloor
+  - Star
   layers:
   - Default
   - TransparentFX
