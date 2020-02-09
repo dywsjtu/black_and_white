@@ -6,9 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    public GameObject[] whitefloors;
+    // public GameObject[] whitefloors;
 
-    public GameObject[] blackfloors;
+    // public GameObject[] blackfloors;
+
+    private Vector3 offset;
 
     Camera camera;
     public float moveSpeed;
@@ -48,15 +50,17 @@ public class PlayerController : MonoBehaviour
     {
         if (isBlack) 
         {
-            whitefloors[0].GetComponent<SpriteRenderer>().material.color = Color.white;
-            blackfloors[0].GetComponent<SpriteRenderer>().material.color = Color.gray;
+            EventBus.Publish<ChangeColorEvent>(new ChangeColorEvent(false));
+            // whitefloors[0].GetComponent<SpriteRenderer>().material.color = Color.white;
+            // blackfloors[0].GetComponent<SpriteRenderer>().material.color = Color.gray;
             camera.backgroundColor = Color.black;
             GetComponent<SpriteRenderer>().material.color = Color.white;
         }
         else 
         {
-            whitefloors[0].GetComponent<SpriteRenderer>().material.color = Color.gray;
-            blackfloors[0].GetComponent<SpriteRenderer>().material.color = Color.black;
+            EventBus.Publish<ChangeColorEvent>(new ChangeColorEvent(true));
+            // whitefloors[0].GetComponent<SpriteRenderer>().material.color = Color.gray;
+            // blackfloors[0].GetComponent<SpriteRenderer>().material.color = Color.black;
             camera.backgroundColor = Color.white;
             GetComponent<SpriteRenderer>().material.color = Color.black;
         }
@@ -67,5 +71,22 @@ public class PlayerController : MonoBehaviour
     public bool GetColor()
     {
         return isBlack;
+    }
+}
+
+
+public class ChangeColorEvent
+{
+    public bool white2Black = false;
+
+    public bool black2White = false;
+    public ChangeColorEvent(bool input) 
+    {
+        white2Black = input;
+        black2White = !white2Black;
+    }
+    public override string ToString()
+    {
+        return "white2Black: " +  white2Black;
     }
 }
