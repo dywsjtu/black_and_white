@@ -2336,7 +2336,6 @@ GameObject:
   - component: {fileID: 2021312110}
   - component: {fileID: 2021312109}
   - component: {fileID: 2021312111}
-  - component: {fileID: 2021312112}
   m_Layer: 5
   m_Name: Manu
   m_TagString: Untagged
@@ -2384,7 +2383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7169812, g: 0.7000712, b: 0.7000712, a: 0.392}
+  m_Color: {r: 0.7169812, g: 0.7000712, b: 0.7000712, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2419,25 +2418,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff83ee70aa81a486e962c8ba83517b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &2021312112
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021312107}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cda6e34da50814d5aa3abd0bf524272b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2028548777
 GameObject:
   m_ObjectHideFlags: 0
