@@ -46,6 +46,10 @@ public class PlayerController : MonoBehaviour
         {
             ChangeColor();
         }
+        if (Input.GetKey ("escape")) 
+        {
+            SceneManager.LoadScene(0);
+        }
         if (transform.position.y < -12) 
         {
             rb.velocity = Vector2.zero;

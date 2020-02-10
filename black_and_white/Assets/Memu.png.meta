@@ -1,0 +1,931 @@
+fileFormatVersion: 2
+guid: f8fe948be05604526aa549f0f103f115
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3591716792525538168
+    second: Memu_0
+  - first:
+      213: 7300441697898396004
+    second: Memu_1
+  - first:
+      213: 2308607959338364885
+    second: Memu_2
+  - first:
+      213: 3232873662288118371
+    second: Memu_3
+  - first:
+      213: 3650177673711311458
+    second: Memu_4
+  - first:
+      213: -1538005604277699449
+    second: Memu_5
+  - first:
+      213: 210528583315287991
+    second: Memu_6
+  - first:
+      213: -641023643200451823
+    second: Memu_7
+  - first:
+      213: -6594128231522488158
+    second: Memu_8
+  - first:
+      213: -7181845045766413924
+    second: Memu_9
+  - first:
+      213: -5835347959360413078
+    second: Memu_10
+  - first:
+      213: 2653173712928057866
+    second: Memu_11
+  - first:
+      213: -1329366215985719328
+    second: Memu_12
+  - first:
+      213: -2513941823127551585
+    second: Memu_13
+  - first:
+      213: 7113006386748991536
+    second: Memu_14
+  - first:
+      213: 7360762606428907923
+    second: Memu_15
+  - first:
+      213: -6066780718947599982
+    second: Memu_16
+  - first:
+      213: -5215462892979989995
+    second: Memu_17
+  - first:
+      213: 1196351969892563719
+    second: Memu_18
+  - first:
+      213: -8842559554740409782
+    second: Memu_19
+  - first:
+      213: 294722284741774047
+    second: Memu_20
+  - first:
+      213: 7741022912594507346
+    second: Memu_21
+  - first:
+      213: 8470779755011942097
+    second: Memu_22
+  - first:
+      213: 237425772891528367
+    second: Memu_23
+  - first:
+      213: 8153421354956530017
+    second: Memu_24
+  - first:
+      213: 4845628721132650786
+    second: Memu_25
+  - first:
+      213: -655459960854323648
+    second: Memu_26
+  - first:
+      213: -117827184557156733
+    second: Memu_27
+  - first:
+      213: -3481386185509263901
+    second: Memu_28
+  - first:
+      213: -7976817485818267974
+    second: Memu_29
+  - first:
+      213: 3246533950664553778
+    second: Memu_30
+  - first:
+      213: -3102406697078539786
+    second: Memu_31
+  - first:
+      213: 8767158658113958235
+    second: Memu_32
+  - first:
+      213: 4954137794912569526
+    second: Memu_33
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 129
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Memu_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 332
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2294151bf1cbd40f2b3aed32ff6036fb
+      internalID: -3591716792525538168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 331
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6a13034b3514403b08a9627aa3d7d3
+      internalID: 7300441697898396004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 332
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2526700b165ff4f9fabc9aa15189d542
+      internalID: 2308607959338364885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 331
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6db76e5e4c92469db4409bb53b9858e
+      internalID: 3232873662288118371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 332
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b52dbb95b0974eaba3f58dbbe6cf248
+      internalID: 3650177673711311458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_5
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 332
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283b63193ff4b4281a09e726a22059e1
+      internalID: -1538005604277699449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 274
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8058f951e83744e749526e3489d0fe6f
+      internalID: 210528583315287991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_7
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 273
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f19563ceeb442db8ee16e399325b0b
+      internalID: -641023643200451823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 274
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89af4d060c86a4e4d9a26db7d2ac9e35
+      internalID: -6594128231522488158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_9
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 273
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088704ac7a5064a14a93e4f5c44d138b
+      internalID: -7181845045766413924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_10
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 274
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2924ed1a69241498cfed63a8fe9a6c
+      internalID: -5835347959360413078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_11
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 274
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae08c09beb754309b0db4a4e5670459
+      internalID: 2653173712928057866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_12
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 218
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109c8d015a2604a5e8af2fa3ca665342
+      internalID: -1329366215985719328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_13
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 217
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb35e0c87039439f84fa396aae1867c
+      internalID: -2513941823127551585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_14
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 218
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b5a95fdc07e4176a746789a1d465ef
+      internalID: 7113006386748991536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_15
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 217
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c364fc23410ef4622bd6f9b50ade0184
+      internalID: 7360762606428907923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_16
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 218
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785f9b2ad932c44119fbf134723809a3
+      internalID: -6066780718947599982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_17
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 217
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b2f36edee794f1fac99d50b52cb54d
+      internalID: -5215462892979989995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_18
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 159
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bafbf053fa84739bfbe1073e62e0d3
+      internalID: 1196351969892563719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 158
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e78ebbba1d34fb98391b1fefc1ffc2
+      internalID: -8842559554740409782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_20
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 159
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4989dbbad04e94501948f05f31764121
+      internalID: 294722284741774047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_21
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 158
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b669f49d5158d462c947a66b034981d5
+      internalID: 7741022912594507346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_22
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 159
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fe5f33bf29949bfb71258689535dce
+      internalID: 8470779755011942097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_23
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 159
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace2c7dc38d854181b90e1c9443aaf41
+      internalID: 237425772891528367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_24
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 95
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34978a0de148646d7afe18e635200a56
+      internalID: 8153421354956530017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 94
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2cb0ac794da4f9d9c37c3040e9f9dc
+      internalID: 4845628721132650786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_26
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 95
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b9e5a10c5494575a99b36cfb718438
+      internalID: -655459960854323648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_27
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 94
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfb485f3b76346bd9de80abad0ef257
+      internalID: -117827184557156733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_28
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 95
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30643ebed2234bf482e2da0e174d55e
+      internalID: -3481386185509263901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_29
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 94
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aba2e448b6334381bf72330dfaa4427
+      internalID: -7976817485818267974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 33
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659ebb236d0f94ad6845d06fbcc3d919
+      internalID: 3246533950664553778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_31
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2a159c204f74972adf8ce5afaa7087
+      internalID: -3102406697078539786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_32
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 33
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230fbb2a4f44f41d6a1fbbce00f790c8
+      internalID: 8767158658113958235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memu_33
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 27
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f6a4cbfc22d47dd852aca8caab7b02
+      internalID: 4954137794912569526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
