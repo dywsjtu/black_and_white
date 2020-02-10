@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     // public GameObject[] blackfloors;
 
-    private Vector3 offset;
+    private Vector3 start;
 
     Camera camera;
     public float moveSpeed;
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        start = transform.position;
         rb = GetComponent<Rigidbody2D>();
         camera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
     }
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y < -12) 
         {
             rb.velocity = Vector2.zero;
-            transform.position = new Vector3(0f, 5f, 0f);
+            transform.position = start;
         }
     }
 
