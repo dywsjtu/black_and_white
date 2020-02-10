@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StarColor : MonoBehaviour
 {
@@ -29,5 +30,12 @@ public class StarColor : MonoBehaviour
     private void OnDestroy()
     {
         EventBus.Unsubscribe(color_event_subscription);
+    }
+
+     private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

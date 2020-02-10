@@ -45,6 +45,11 @@ public class PlayerController : MonoBehaviour
         {
             ChangeColor();
         }
+        if (transform.position.y < -12) 
+        {
+            rb.velocity = Vector2.zero;
+            transform.position = new Vector3(0f, 5f, 0f);
+        }
     }
 
     public void ChangeColor()
@@ -72,13 +77,6 @@ public class PlayerController : MonoBehaviour
     public bool GetColor()
     {
         return isBlack;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.tag == "Star")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
     }
 }
 
