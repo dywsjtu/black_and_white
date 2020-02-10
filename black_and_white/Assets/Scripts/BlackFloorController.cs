@@ -29,4 +29,8 @@ public class BlackFloorController : MonoBehaviour
             this.gameObject.layer = 9;
         }
     }
+    private void OnDestroy()
+    {
+        EventBus.Unsubscribe(color_event_subscription);
+    }
 }

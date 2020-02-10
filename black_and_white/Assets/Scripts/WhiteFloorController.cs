@@ -27,4 +27,8 @@ public class WhiteFloorController : MonoBehaviour
             this.gameObject.layer = 8;
         }
     }
+    private void OnDestroy()
+    {
+        EventBus.Unsubscribe(color_event_subscription);
+    }
 }

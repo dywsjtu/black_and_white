@@ -26,4 +26,8 @@ public class StarColor : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = white;
         }
     }
+    private void OnDestroy()
+    {
+        EventBus.Unsubscribe(color_event_subscription);
+    }
 }
