@@ -37,8 +37,10 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("test space");
             if (rb.velocity.y == 0)
             {
+                Debug.Log("test y velocity");
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             }
         }

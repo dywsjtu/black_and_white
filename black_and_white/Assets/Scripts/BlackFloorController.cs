@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class BlackFloorController : MonoBehaviour
 {
+    public bool move = false;
+
+    private Vector3 position;
     // Start is called before the first frame update
     Subscription<ChangeColorEvent> color_event_subscription; 
     void Start()
     {
+        position = transform.position;
         color_event_subscription = EventBus.Subscribe<ChangeColorEvent>(_OnColorUpdated);
     }
 
@@ -32,5 +36,13 @@ public class BlackFloorController : MonoBehaviour
     private void OnDestroy()
     {
         EventBus.Unsubscribe(color_event_subscription);
+    }
+
+    void Update()
+    {
+        if (move)
+        {
+            transform.position = new Vector3(position.x, Mathf.Sin(Time.time) * 3, position.z);
+        }
     }
 }
