@@ -1,9 +1,9 @@
 ﻿/* EventBus.cs
- *
+ * 
  * This script implements an "Event Bus" -- a critical part of the Pub/Sub design pattern.
  * Developers should make heavy use of the Subscribe() and Publish() methods below to receive and send
  * instances of your own, custom "event" classes between systems. This "loosely couples" the systems, preventing spaghetti.
- *
+ * 
  * Please find an example usage of Publish() in ScorePointOnTouch.cs
  * Please find an example, custom Event class in ScorePointOnTouch.cs
  * Please find an example usage of Subscribe() in ScoreUI.cs
@@ -18,8 +18,8 @@ using UnityEngine;
 public class EventBus
 {
     /* DEVELOPER : Change this to "true" and all events will be logged to console automatically */
-    public const bool DEBUG_MODE = false;
-
+    public const bool DEBUG_MODE = true;
+    
     static Dictionary<Type, IList> _topics = new Dictionary<Type, IList>();
 
     public static void Publish<T>(T published_event)
@@ -37,10 +37,29 @@ public class EventBus
             /* iterate through the subscribers and pass along the event T */
             if (DEBUG_MODE)
                 Debug.Log("..." + subscriber_list.Count + " subscriptions being executed for this event.");
+
+            /* This is a collection of subscriptions that have lost their target object. */
+            List<Subscription<T>> orphaned_subscriptions = new List<Subscription<T>>();
+            
             foreach (Subscription<T> s in subscriber_list)
             {
-                s.callback(published_event);
+                if(s.callback.Target == null || s.callback.Target.Equals(null))
+                {
+                    /* This callback is hanging, as its target object was destroyed */
+                    /* Collect this callback and remove it later */
+                    orphaned_subscriptions.Add(s);
+
+                } else
+                {
+                    s.callback(published_event);
+                }
             }
+
+            /* Unsubcribe orphaned subs that have had their target objects destroyed */
+            foreach(Subscription<T> orphan_subscription in orphaned_subscriptions) {
+                EventBus.Unsubscribe<T>(orphan_subscription);
+            }
+
         } else
         {
             if (DEBUG_MODE)
