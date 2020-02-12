@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class WhiteFloorController : MonoBehaviour
 {
-    public bool move = false;
+    
+    public bool moveHorizontal = false;
+    public bool moveVertical = false;
     private Vector3 position;
     Subscription<ChangeColorEvent> color_event_subscription; 
     void Start()
@@ -37,9 +39,13 @@ public class WhiteFloorController : MonoBehaviour
 
     void Update()
     {
-        if (move)
+        if (moveHorizontal)
         {
             transform.position = new Vector3(position.x, Mathf.Sin(Time.time) * 3, position.z);
+        }
+        if (moveVertical) 
+        {
+            transform.position = new Vector3(Mathf.Sin(Time.time) * 3, position.y, position.z);
         }
     }
 }

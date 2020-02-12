@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class BlackFloorController : MonoBehaviour
 {
-    public bool move = false;
+    public bool moveHorizontal = false;
+
+    public bool moveVertical = false;
 
     private Vector3 position;
     // Start is called before the first frame update
@@ -40,9 +42,13 @@ public class BlackFloorController : MonoBehaviour
 
     void Update()
     {
-        if (move)
+        if (moveHorizontal)
         {
             transform.position = new Vector3(position.x, Mathf.Sin(Time.time) * 3, position.z);
+        }
+        if (moveVertical) 
+        {
+            transform.position = new Vector3(Mathf.Sin(Time.time) * 3, position.y, position.z);
         }
     }
 }
