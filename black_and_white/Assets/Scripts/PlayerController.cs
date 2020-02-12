@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKey ("escape")) 
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
         if (transform.position.y < -12) 
         {
