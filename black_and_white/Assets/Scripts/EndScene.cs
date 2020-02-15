@@ -9,7 +9,7 @@ public class EndScene : MonoBehaviour
     {
          if (Input.GetKey ("escape")) 
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 }
