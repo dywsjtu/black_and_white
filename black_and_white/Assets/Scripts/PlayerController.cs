@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = new Vector2(moveHorizontal*moveSpeed, rb.velocity.y);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             Debug.Log("test space");
             if (rb.velocity.y == 0)
@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             }
         }
-        if (Input.GetKeyDown(KeyCode.Z)) 
+        if (Input.GetKeyDown(KeyCode.Space)) 
         {
             ChangeColor();
         }

@@ -7,7 +7,8 @@ public class Menu : MonoBehaviour
 {
     public void PlayLevel(int level)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + level);
+        GameObject.FindGameObjectWithTag("Music").GetComponent<Music>().Play();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + level); 
     }
 
     public void Quit()
