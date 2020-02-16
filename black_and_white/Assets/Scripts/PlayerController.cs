@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
-
-    // public GameObject[] whitefloors;
-
-    // public GameObject[] blackfloors;
-
     private Vector3 start;
 
     Camera camera;
@@ -64,16 +59,12 @@ public class PlayerController : MonoBehaviour
         if (isBlack) 
         {
             EventBus.Publish<ChangeColorEvent>(new ChangeColorEvent(false));
-            // whitefloors[0].GetComponent<SpriteRenderer>().material.color = Color.white;
-            // blackfloors[0].GetComponent<SpriteRenderer>().material.color = Color.gray;
             camera.backgroundColor = Color.black;
             GetComponent<SpriteRenderer>().material.color = Color.white;
         }
         else 
         {
             EventBus.Publish<ChangeColorEvent>(new ChangeColorEvent(true));
-            // whitefloors[0].GetComponent<SpriteRenderer>().material.color = Color.gray;
-            // blackfloors[0].GetComponent<SpriteRenderer>().material.color = Color.black;
             camera.backgroundColor = Color.white;
             GetComponent<SpriteRenderer>().material.color = Color.black;
         }

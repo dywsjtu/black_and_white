@@ -25,4 +25,20 @@ public class Music : MonoBehaviour
     {
         audioSource.Stop();
     }
+
+    // public void PlayBlack()
+    // {
+    //     if (!black.isPlaying) 
+    //     {
+    //         black.Play();
+    //     }
+    // }
+
+    // public void PlayWhite()
+    // {
+    //     if (!white.isPlaying) 
+    //     {
+    //         white.Play();
+    //     }
+    // }
 }
