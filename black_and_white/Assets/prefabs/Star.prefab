@@ -123,3 +123,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   black: {fileID: -6859001260349468157, guid: b1e17eb2b3a754219a7790e0f620e6cb, type: 3}
   white: {fileID: 6326231466481203021, guid: b1e17eb2b3a754219a7790e0f620e6cb, type: 3}
+  star: {fileID: 8300000, guid: 2405eec0ce6814ddda70df0c1dee4b01, type: 3}

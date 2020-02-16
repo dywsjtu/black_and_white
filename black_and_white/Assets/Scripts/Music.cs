@@ -7,6 +7,8 @@ public class Music : MonoBehaviour
     // Start is called before the first frame update
 
     public AudioSource audioSource;
+
+    public AudioSource star;
     private void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
@@ -26,13 +28,13 @@ public class Music : MonoBehaviour
         audioSource.Stop();
     }
 
-    // public void PlayBlack()
-    // {
-    //     if (!black.isPlaying) 
-    //     {
-    //         black.Play();
-    //     }
-    // }
+    public void PlayStar()
+    {
+        if (!star.isPlaying) 
+        {
+            star.Play();
+        }
+    }
 
     // public void PlayWhite()
     // {

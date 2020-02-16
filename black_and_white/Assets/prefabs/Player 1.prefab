@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c5ff2e49e5564cd68c6e9026956ba70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  white: {fileID: 8300000, guid: cd134f3bd803343b0adb547c1a527610, type: 3}
-  black: {fileID: 8300000, guid: 45bbd80e67b1c4bc3a8a66e45162695b, type: 3}
+  jump: {fileID: 8300000, guid: dda9b3a3950ee43529e457e357e67172, type: 3}
+  color: {fileID: 8300000, guid: 678e67a65eb7c4037a18d744f3494245, type: 3}
   moveSpeed: 4
   jumpHeight: 8
 --- !u!50 &2040501876591717723

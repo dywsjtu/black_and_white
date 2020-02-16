@@ -8,6 +8,11 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 start;
 
+    public AudioClip jump;
+
+    public AudioClip color;
+
+    
     Camera camera;
     public float moveSpeed;
 
@@ -36,11 +41,13 @@ public class PlayerController : MonoBehaviour
             if (rb.velocity.y == 0)
             {
                 Debug.Log("test y velocity");
+                AudioSource.PlayClipAtPoint(jump, Camera.main.transform.position);
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             }
         }
         if (Input.GetKeyDown(KeyCode.Space)) 
         {
+            AudioSource.PlayClipAtPoint(color, Camera.main.transform.position);
             ChangeColor();
         }
         if (Input.GetKey ("escape")) 

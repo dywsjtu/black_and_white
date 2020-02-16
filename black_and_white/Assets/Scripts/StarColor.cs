@@ -32,9 +32,11 @@ public class StarColor : MonoBehaviour
         EventBus.Unsubscribe(color_event_subscription);
     }
 
-     private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("test star clip");
+            GameObject.FindGameObjectWithTag("Music").GetComponent<Music>().PlayStar();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
