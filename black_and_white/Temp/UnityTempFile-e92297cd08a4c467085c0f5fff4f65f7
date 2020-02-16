@@ -292,6 +292,7 @@
 "Assets/Scripts/EndScene.cs"
 "Assets/Scripts/EventBus.cs"
 "Assets/Scripts/Menu.cs"
+"Assets/Scripts/MessageManager.cs"
 "Assets/Scripts/Music.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SmoothFollowPlayer.cs"

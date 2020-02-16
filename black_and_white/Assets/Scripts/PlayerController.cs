@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     public AudioClip color;
 
+    private bool isGrounded = true;
     
     Camera camera;
     public float moveSpeed;
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             Debug.Log("test space");
-            if (rb.velocity.y == 0)
+            if (rb.velocity.y == 0 && isGrounded)
             {
                 Debug.Log("test y velocity");
                 AudioSource.PlayClipAtPoint(jump, Camera.main.transform.position);
@@ -83,6 +84,23 @@ public class PlayerController : MonoBehaviour
     {
         return isBlack;
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "BlackFloor" || other.gameObject.tag == "WhiteFloor")
+        {
+            isGrounded = true;
+        }
+    }
+  
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "BlackFloor" || other.gameObject.tag == "WhiteFloor")
+        {
+            isGrounded = false;
+        }
+    }
+
 }
 
 
