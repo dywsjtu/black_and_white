@@ -8,6 +8,7 @@ TagManager:
   - BlackFloor
   - Star
   - Music
+  - Toast
   layers:
   - Default
   - TransparentFX

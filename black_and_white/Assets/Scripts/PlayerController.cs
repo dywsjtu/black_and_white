@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed;
 
     public float jumpHeight;
-
     private bool isBlack = false;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +25,26 @@ public class PlayerController : MonoBehaviour
         start = transform.position;
         rb = GetComponent<Rigidbody2D>();
         camera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
+        if (SceneManager.GetActiveScene().buildIndex == 1) 
+        {
+            GameObject.FindGameObjectWithTag("Toast").GetComponent<ToastManager>().SetUpSubscription();
+            EventBus.Publish<ToastEvent>(new ToastEvent("Try to move with LeftArrow and RightArrow"));
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 2) 
+        {
+            GameObject.FindGameObjectWithTag("Toast").GetComponent<ToastManager>().SetUpSubscription();
+            EventBus.Publish<ToastEvent>(new ToastEvent("Try to jump with UpArrow"));
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 3) 
+        {
+            GameObject.FindGameObjectWithTag("Toast").GetComponent<ToastManager>().SetUpSubscription();
+            EventBus.Publish<ToastEvent>(new ToastEvent("Try to change space with Space"));
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 4) 
+        {
+            GameObject.FindGameObjectWithTag("Toast").GetComponent<ToastManager>().SetUpSubscription();
+            EventBus.Publish<ToastEvent>(new ToastEvent("Now combine what you learned!"));
+        }
     }
 
     // Update is called once per frame
@@ -100,7 +119,6 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
     }
-
 }
 
 
@@ -117,5 +135,18 @@ public class ChangeColorEvent
     public override string ToString()
     {
         return "white2Black: " +  white2Black;
+    }
+}
+
+public class ToastEvent
+{
+    public string message = "";
+    public ToastEvent(string m) 
+    {
+        message = m;
+    }
+    public override string ToString()
+    {
+        return message;
     }
 }
