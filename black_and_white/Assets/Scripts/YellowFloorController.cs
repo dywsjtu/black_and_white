@@ -49,7 +49,7 @@ public class YellowFloorController : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Player" && isTouched == false)
+        if(other.gameObject.tag == "Player")
         {
             if (!yellow.isPlaying)
             {

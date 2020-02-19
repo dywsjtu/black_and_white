@@ -45,10 +45,15 @@ public class PlayerController : MonoBehaviour
             GameObject.FindGameObjectWithTag("Toast").GetComponent<ToastManager>().SetUpSubscription();
             EventBus.Publish<ToastEvent>(new ToastEvent("Now combine what you learned!"));
         }
-        if (SceneManager.GetActiveScene().buildIndex == 6) 
+        if (SceneManager.GetActiveScene().buildIndex == 7) 
         {
             GameObject.FindGameObjectWithTag("Toast").GetComponent<ToastManager>().SetUpSubscription();
             EventBus.Publish<ToastEvent>(new ToastEvent("Don't stay long on yellow block"));
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 8) 
+        {
+            GameObject.FindGameObjectWithTag("Toast").GetComponent<ToastManager>().SetUpSubscription();
+            EventBus.Publish<ToastEvent>(new ToastEvent("Red is dangerous"));
         }
     }
 
