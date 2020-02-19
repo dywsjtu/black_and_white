@@ -5,7 +5,7 @@ using UnityEngine;
 public class Music : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    static Music instance;
     public AudioSource audioSource;
 
     public AudioSource star;
@@ -13,7 +13,17 @@ public class Music : MonoBehaviour
     public AudioSource red;
     private void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if(instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        } 
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(transform.gameObject);
+        }
+       
     }
 
     public void Play()
