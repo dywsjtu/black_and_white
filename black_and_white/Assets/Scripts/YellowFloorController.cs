@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedFloorController : MonoBehaviour
+public class YellowFloorController : MonoBehaviour
 {
-    public bool scanHorizontal = false;
+   public bool scanHorizontal = false;
 
     public bool scanVertical = false;
     private Vector3 position;
@@ -25,5 +25,18 @@ public class RedFloorController : MonoBehaviour
         {
             transform.position = new Vector3(position.x, Mathf.PingPong(Time.time / speed, distance) + position.y, position.z);
         }
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            StartCoroutine(Dispear());
+        }
+    }
+
+    IEnumerator Dispear()
+    {
+        yield return new WaitForSeconds(3f);
+        gameObject.SetActive(false);
     }
 }

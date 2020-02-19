@@ -110,6 +110,10 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+        if(other.gameObject.tag == "RedFloor")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
   
     void OnCollisionExit2D(Collision2D other)
