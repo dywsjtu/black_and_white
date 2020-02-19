@@ -116,7 +116,6 @@ public class PlayerController : MonoBehaviour
         }
         if(other.gameObject.tag == "RedFloor")
         {
-            GameObject.FindGameObjectWithTag("Music").GetComponent<Music>().PlayStar();
             // float initial_time = Time.time;
             // float progress = (Time.time - initial_time) / 0.5f;
             // while(progress < 1f)
