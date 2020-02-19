@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e7f935466b9d4a458e464c68fae2b69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveHorizontal: 0
+  moveVertical: 0
+  speed: 1
+  distance: 3
 --- !u!1001 &2290437706589397366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43,6 +47,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205004802932626525, guid: 1e602952106ce4d51a86ca81501238b0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3205004802932626526, guid: 1e602952106ce4d51a86ca81501238b0,
         type: 3}

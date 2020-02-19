@@ -7,6 +7,14 @@ public class BlackFloorController : MonoBehaviour
     public bool moveHorizontal = false;
 
     public bool moveVertical = false;
+    
+    public bool scanHorizontal = false;
+
+    public bool scanVertical = false;
+
+    public float speed = 1f;
+
+    public float distance = 3f;
 
     private Vector3 position;
     // Start is called before the first frame update
@@ -24,6 +32,7 @@ public class BlackFloorController : MonoBehaviour
             // black floor need to be change from gray to black
             // from invisible to visible
             GetComponent<SpriteRenderer>().material.color = Color.black;
+            GetComponent<SpriteRenderer>().sortingOrder = 0;
             this.gameObject.layer = 8;
 
         }
@@ -32,6 +41,7 @@ public class BlackFloorController : MonoBehaviour
             // black floor need to be change from black to gray
             // from visible to invisible
             GetComponent<SpriteRenderer>().material.color = Color.gray;
+            GetComponent<SpriteRenderer>().sortingOrder = -1;
             this.gameObject.layer = 9;
         }
     }
@@ -44,11 +54,19 @@ public class BlackFloorController : MonoBehaviour
     {
         if (moveHorizontal)
         {
-            transform.position = new Vector3(position.x, Mathf.Sin(Time.time) * 3, position.z);
+            transform.position = new Vector3(position.x, position.y + Mathf.Sin(Time.time / speed) * distance, position.z);
         }
         if (moveVertical) 
         {
-            transform.position = new Vector3(Mathf.Sin(Time.time) * 3, position.y, position.z);
+            transform.position = new Vector3(position.x + Mathf.Sin(Time.time / speed) * distance, position.y, position.z);
+        }
+        if (scanHorizontal)
+        {
+            transform.position = new Vector3(position.x + Mathf.PingPong(Time.time / speed, distance), position.y, position.z);
+        }
+        if (scanVertical)
+        {
+            transform.position = new Vector3(position.x, Mathf.PingPong(Time.time / speed, distance) + position.y, position.z);
         }
     }
 }
