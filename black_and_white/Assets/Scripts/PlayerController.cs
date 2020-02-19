@@ -45,6 +45,11 @@ public class PlayerController : MonoBehaviour
             GameObject.FindGameObjectWithTag("Toast").GetComponent<ToastManager>().SetUpSubscription();
             EventBus.Publish<ToastEvent>(new ToastEvent("Now combine what you learned!"));
         }
+        if (SceneManager.GetActiveScene().buildIndex == 6) 
+        {
+            GameObject.FindGameObjectWithTag("Toast").GetComponent<ToastManager>().SetUpSubscription();
+            EventBus.Publish<ToastEvent>(new ToastEvent("Don't stay long on yellow block"));
+        }
     }
 
     // Update is called once per frame
@@ -57,10 +62,8 @@ public class PlayerController : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Debug.Log("test space");
             if (rb.velocity.y == 0 && isGrounded)
             {
-                Debug.Log("test y velocity");
                 AudioSource.PlayClipAtPoint(jump, Camera.main.transform.position);
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             }
@@ -78,6 +81,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             transform.position = start;
+            EventBus.Publish<RecoverEvent>(new RecoverEvent("recover"));
         }
     }
 
@@ -112,6 +116,13 @@ public class PlayerController : MonoBehaviour
         }
         if(other.gameObject.tag == "RedFloor")
         {
+            GameObject.FindGameObjectWithTag("Music").GetComponent<Music>().PlayStar();
+            // float initial_time = Time.time;
+            // float progress = (Time.time - initial_time) / 0.5f;
+            // while(progress < 1f)
+            // {
+            //     progress = (Time.time - initial_time) / 0.5f;
+            // }
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -146,6 +157,19 @@ public class ToastEvent
 {
     public string message = "";
     public ToastEvent(string m) 
+    {
+        message = m;
+    }
+    public override string ToString()
+    {
+        return message;
+    }
+}
+
+public class RecoverEvent
+{
+    public string message = "recover";
+    public RecoverEvent(string m) 
     {
         message = m;
     }

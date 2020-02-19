@@ -9,6 +9,8 @@ public class Music : MonoBehaviour
     public AudioSource audioSource;
 
     public AudioSource star;
+
+    public AudioSource red;
     private void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
@@ -36,11 +38,11 @@ public class Music : MonoBehaviour
         }
     }
 
-    // public void PlayWhite()
-    // {
-    //     if (!white.isPlaying) 
-    //     {
-    //         white.Play();
-    //     }
-    // }
+    public void PlayRed()
+    {
+        if (!red.isPlaying) 
+        {
+            red.Play();
+        }
+    }
 }
