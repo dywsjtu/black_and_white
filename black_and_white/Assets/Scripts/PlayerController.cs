@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "BlackFloor" || other.gameObject.tag == "WhiteFloor")
+        if(other.gameObject.tag == "BlackFloor" || other.gameObject.tag == "WhiteFloor" || other.gameObject.tag == "YellowFloor")
         {
             isGrounded = true;
         }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class YellowFloorController : MonoBehaviour
 {
-   public bool scanHorizontal = false;
+    Camera camera;
+    public bool scanHorizontal = false;
 
     public bool scanVertical = false;
     private Vector3 position;
@@ -14,6 +15,7 @@ public class YellowFloorController : MonoBehaviour
     void Start()
     {
         position = transform.position;
+        camera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
     }
     void Update()
     {
@@ -30,13 +32,24 @@ public class YellowFloorController : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            StartCoroutine(Dispear());
+             StartCoroutine(Dispear());
         }
     }
 
     IEnumerator Dispear()
-    {
-        yield return new WaitForSeconds(3f);
-        gameObject.SetActive(false);
+    { 
+        while (true)
+        {
+            float initial_time = Time.time;
+            float progress = (Time.time - initial_time) / 3f;
+            while(progress < 1f)
+            {
+                progress = (Time.time - initial_time) / 3f;
+                GetComponent<SpriteRenderer>().material.color = Color.Lerp(Color.yellow, Color.gray, progress);
+                yield return null;
+            }
+            gameObject.SetActive(false);
+            yield return null;
+        }
     }
 }
